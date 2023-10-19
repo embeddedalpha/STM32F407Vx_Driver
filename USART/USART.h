@@ -21,16 +21,23 @@
 typedef struct USART_Config
 {
 	USART_TypeDef *Port;
-	bool clock;
-	uint8_t communication_mode;
-	uint8_t mode;
 	uint32_t baudrate;
+	uint8_t mode;
 	uint8_t TX_Pin;
 	uint8_t RX_Pin;
-
-
+	uint8_t interrupt;
+	uint8_t hardware_flow;
+	uint8_t stop_bits;
+	uint8_t dma_enable;
 
 }USART_Config;
+
+void USART_Init(USART_Config *config);
+void USART_TX_Byte(USART_Config *config, uint16_t data);
+uint16_t USART_RX_Byte(USART_Config *config);
+void USART_TX_Buffer(USART_Config *config, uint8_t tx_buffer, uint16_t length);
+void USART_RX_Buffer(USART_Config *config, uint8_t *rx_buffer, uint16_t length);
+
 
 
 #endif /* USART_H_ */
