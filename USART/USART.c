@@ -137,7 +137,7 @@ static void PIN_Setup(USART_Config *config)
 		}
 	}
 
-	if(config->Port == USART2)
+	else if(config->Port == USART2)
 	{
 		if((config->mode == Mode.Asynchronous) ||
 		   (config->mode == Mode.Synchronous) ||
@@ -210,7 +210,7 @@ static void PIN_Setup(USART_Config *config)
 		}
 	}
 
-	if(config->Port == USART3)
+	else if(config->Port == USART3)
 	{
 		if((config->mode == Mode.Asynchronous) ||
 		   (config->mode == Mode.Synchronous) ||
@@ -244,6 +244,27 @@ static void PIN_Setup(USART_Config *config)
 		{
 			if(config->TX_Pin == USART3_TX_Pin.PA9)GPIO_Pin_Init(GPIOA, USART3_TX_Pin.PA9, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_3);
 			if((config->mode == Mode.SmartCard_Clock))GPIO_Pin_Init(GPIOA, USART3_CLK_Pin.PA8, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_3);
+
+		}
+	}
+	else if(config->Port == UART4)
+	{
+		if((config->mode == Mode.Asynchronous) ||
+		   (config->mode == Mode.IrDA) ||
+		   (config->mode == Mode.LIN) )
+		{
+			if(config->TX_Pin == UART4_TX_Pin.PA0)GPIO_Pin_Init(GPIOA, UART4_TX_Pin.PA0, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_4);
+			else if(config->TX_Pin == UART4_TX_Pin.PC10)GPIO_Pin_Init(GPIOC, UART4_TX_Pin.PC10, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_4);
+
+			if(config->RX_Pin == UART4_RX_Pin.PA1)GPIO_Pin_Init(GPIOA, UART4_RX_Pin.PA1, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_4);
+			else if(config->RX_Pin == UART4_RX_Pin.PC11)GPIO_Pin_Init(GPIOC, UART4_RX_Pin.PC11, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_4);
+		}
+		else if((config->mode == Mode.SmartCard) ||
+		   (config->mode == Mode.SmartCard_Clock) ||
+		   (config->mode == Mode.Single_Wire_Half_Duplex) )
+		{
+			if(config->TX_Pin == UART4_TX_Pin.PA0)GPIO_Pin_Init(GPIOA, UART4_TX_Pin.PA0, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_4);
+			if((config->mode == Mode.SmartCard_Clock))GPIO_Pin_Init(GPIOA, USART3_CLK_Pin.PA8, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_4);
 
 		}
 	}
