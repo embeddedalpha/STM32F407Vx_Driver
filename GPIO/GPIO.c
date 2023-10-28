@@ -137,6 +137,7 @@ int GPIO_Clock_Enable(GPIO_TypeDef *PORT)
 
 void GPIO_Pin_Init(GPIO_TypeDef *Port, uint8_t pin, uint8_t mode, uint8_t output_type, uint8_t speed, uint8_t pull, uint8_t alternate_function)
 {
+	GPIO_Clock_Enable(Port);
 	Port -> MODER |= mode << (pin*2);
 	Port -> OTYPER |= output_type << pin;
 	Port -> OSPEEDR |= speed << (pin*2);
