@@ -268,6 +268,27 @@ static void PIN_Setup(USART_Config *config)
 
 		}
 	}
+	else if(config->Port == USART6)
+	{
+		if((config->mode == Mode.Asynchronous) ||
+		   (config->mode == Mode.Synchronous) ||
+		   (config->mode == Mode.IrDA) ||
+		   (config->mode == Mode.LIN) )
+		{
+			if(config->TX_Pin == USART6_TX_Pin.PC6)GPIO_Pin_Init(GPIOC, USART6_TX_Pin.PC6, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_6);
+			if(config->RX_Pin == USART6_RX_Pin.PC7)GPIO_Pin_Init(GPIOC, USART6_RX_Pin.PC7, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_6);
+			if(config->CLK_Pin == USART6_CLK_Pin.PC8)GPIO_Pin_Init(GPIOC, USART6_CLK_Pin.PC8, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_6);
+		}
+		else if((config->mode == Mode.SmartCard) ||
+		   (config->mode == Mode.SmartCard_Clock) ||
+		   (config->mode == Mode.Single_Wire_Half_Duplex) )
+		{
+			if(config->TX_Pin == USART6_TX_Pin.PC6)GPIO_Pin_Init(GPIOA, USART6_TX_Pin.PC6, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_6);
+			if((config->mode == Mode.SmartCard_Clock))GPIO_Pin_Init(GPIOA, USART6_CLK_Pin.PC8, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.USART_6);
+
+		}
+	}
+
 
 }
 
