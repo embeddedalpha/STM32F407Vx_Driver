@@ -23,6 +23,7 @@ static const struct Frame_Length
 
 static const struct Interrupt_Type
 {
+	int Disable;
 	int Parity_Enable;
 	int Transmit_Empty_Enable;
 	int Transmission_Complete_Enable;
@@ -30,7 +31,7 @@ static const struct Interrupt_Type
 	int IDLE_Enable;
 	int CTS_Enable;
 	int Error_Enable;
-}Interrupt_Type = {1<<8,1<<7,1<<6,1<<5,1<<4,1<<10,1<<0};
+}Interrupt_Type = {0,1<<8,1<<7,1<<6,1<<5,1<<4,1<<10,1<<0,};
 
 static const struct Mode
 {
@@ -56,10 +57,11 @@ static const struct DMA_Enable
 
 static const struct Hardware_Flow
 {
+	uint8_t Disable;
 	uint8_t CTS_Enable;
 	uint8_t RTS_Enable;
-	uint8_t CTS_RT_Enable;
-}Hardware_Flow={0,1,2};
+	uint8_t CTS_RTS_Enable;
+}Hardware_Flow={0,1,2,3};
 
 static const struct Stop_Bits
 {
@@ -202,6 +204,14 @@ static const struct USART6_CLK_Pin
 {
 	uint8_t PC8;
 }USART6_CLK_Pin = {8};
+
+static const struct Low_Power_USART
+{
+	uint8_t Enable;
+	uint8_t Disable;
+}Low_Power_USART = {1,0};
+
+
 
 
 #endif /* USART_DEFS_H_ */
