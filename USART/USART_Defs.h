@@ -33,7 +33,7 @@ static const struct Interrupt_Type
 	int Error_Enable;
 }Interrupt_Type = {0,1<<8,1<<7,1<<6,1<<5,1<<4,1<<10,1<<0,};
 
-static const struct Mode
+static const struct USART_Mode
 {
 
 	uint8_t Disable;
@@ -44,7 +44,7 @@ static const struct Mode
 	uint8_t LIN;
 	uint8_t SmartCard;
 	uint8_t SmartCard_Clock;
-}Mode = {0,1,2,3,4,5,6,7};
+}USART_Mode = {0,1,2,3,4,5,6,7};
 
 
 static const struct DMA_Enable
@@ -65,11 +65,11 @@ static const struct Hardware_Flow
 
 static const struct Stop_Bits
 {
-	uint8_t Bit_1;
-	uint8_t Bit_0_5;
-	uint8_t Bit_2;
-	uint8_t Bit_1_5;
-}Stop_Bits={0,1,2,3};
+	uint16_t Bit_1;
+	uint16_t Bit_0_5;
+	uint16_t Bit_2;
+	uint16_t Bit_1_5;
+}Stop_Bits={0,1<<12,2<<12,3<<12};
 
 
 
@@ -210,6 +210,14 @@ static const struct Low_Power_USART
 	uint8_t Enable;
 	uint8_t Disable;
 }Low_Power_USART = {1,0};
+
+static const struct USART_Parity
+{
+	uint16_t Enable;
+	uint16_t Disable;
+	uint16_t Even;
+	uint16_t Odd;
+}USART_Parity = {1 << 10, 0 << 0, 1 << 9, 0 << 9};
 
 
 
