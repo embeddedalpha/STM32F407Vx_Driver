@@ -316,6 +316,16 @@ int8_t USART_Init(USART_Config *config)
 	config->Port->CR1 |= config->interrupt; //interrupt
 	config->Port->CR2 |= config->stop_bits;
 
+	if(config->mode == USART_Mode.Single_Wire_Half_Duplex) config -> Port -> CR3 |= USART_CR3_HDSEL;
+	if(config->mode == USART_Mode.LIN) config -> Port -> CR2 |= USART_CR2_LINEN;
+
+
+
+
+
+
+
+
 
 
 

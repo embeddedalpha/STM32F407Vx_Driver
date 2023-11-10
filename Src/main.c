@@ -35,7 +35,6 @@ int main(void)
 	serial.TX_Pin = USART1_TX_Pin.PA9;
 	serial.RX_Pin = USART1_RX_Pin.PA10;
 	serial.baudrate = 115200;
-
 	USART_Init(&serial);
 
 

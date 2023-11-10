@@ -1,0 +1,37 @@
+	else if(config->Port == UART4)
+	{
+		if((config->mode == Mode.Asynchronous) ||
+		   (config->mode == Mode.Synchronous) ||
+		   (config->mode == Mode.IrDA) ||
+		   (config->mode == Mode.LIN) )
+		{
+			if(config->TX_Pin == UART4_TX_Pin.PA0)GPIO_Pin_Init(GPIOA, UART4_TX_Pin.PA9, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.UART_4);
+			else if(config->TX_Pin == UART4_TX_Pin.PC10)GPIO_Pin_Init(GPIOB, UART4_TX_Pin.PB6, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.UART_4);
+			else if(config->TX_Pin == UART4_TX_Pin.PD8)GPIO_Pin_Init(GPIOB, UART4_TX_Pin.PB6, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.UART_4);
+
+			if(config->RX_Pin == UART4_RX_Pin.PA10)GPIO_Pin_Init(GPIOA, UART4_RX_Pin.PA10, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.UART_4);
+			else if(config->RX_Pin == UART4_RX_Pin.PB7)GPIO_Pin_Init(GPIOB, UART4_RX_Pin.PB7, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.UART_4);
+
+			if((config->mode == Mode.Synchronous))if(config->CLK_Pin == USART3_CLK_Pin.PA8)GPIO_Pin_Init(GPIOA, USART3_CLK_Pin.PA8, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.UART_4);
+
+			if(config->hardware_flow != Hardware_Flow.Disable)
+			{
+				if((config->hardware_flow == Hardware_Flow.CTS_Enable) || (config->hardware_flow == Hardware_Flow.CTS_RTS_Enable))
+				{
+					GPIO_Pin_Init(GPIOA, USART3_CTS_Pin.PA11, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.UART_4);
+				}
+				if((config->hardware_flow == Hardware_Flow.RTS_Enable) || (config->hardware_flow == Hardware_Flow.CTS_RTS_Enable))
+				{
+					GPIO_Pin_Init(GPIOA, USART3_RTS_Pin.PA12, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.UART_4);
+				}
+		    }
+		}
+		else if((config->mode == Mode.SmartCard) ||
+		   (config->mode == Mode.SmartCard_Clock) ||
+		   (config->mode == Mode.Single_Wire_Half_Duplex) )
+		{
+			if(config->TX_Pin == UART4_TX_Pin.PA9)GPIO_Pin_Init(GPIOA, UART4_TX_Pin.PA9, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.UART_4);
+			if((config->mode == Mode.SmartCard_Clock))GPIO_Pin_Init(GPIOA, USART3_CLK_Pin.PA8, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.UART_4);
+
+		}
+	}
