@@ -143,8 +143,8 @@ static const struct SPI2_CLK
 static const struct SPI3_MISO
 {
 	uint16_t PC11;
-	uint16_t PB14;
-}SPI3_MISO={311,214};
+	uint16_t PB4;
+}SPI3_MISO={311,24};
 
 static const struct SPI3_MOSI
 {
