@@ -77,8 +77,6 @@ static void SPI_Pin(SPI_Config *config)
 		if(config->mosi_pin == SPI3_MOSI.PB5) GPIO_Pin_Init(GPIOB, 5, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.Very_High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.SPI_1);
 		if(config->mosi_pin == SPI3_MOSI.PC12) GPIO_Pin_Init(GPIOC, 12, MODE.Alternate_Function, Output_Type.Push_Pull, Speed.Very_High_Speed, Pull.No_Pull_Up_Down, Alternate_Functions.SPI_1);
 	}
-
-
 }
 
 
@@ -87,10 +85,24 @@ void SPI_Init(SPI_Config *config)
 	if(config->type == SPI_Type.Master)GPIO_Pin_Init(config->NSS_Port, config->NSS_Pin, MODE.General_Purpose_Output, Output_Type.Push_Pull, Speed.Very_High_Speed, Pull.Pull_Up, Alternate_Functions.None);
 	if(config->type == SPI_Type.Slave)GPIO_Pin_Init(config->NSS_Port, config->NSS_Pin, MODE.Input, Output_Type.Push_Pull, Speed.Very_High_Speed, Pull.Pull_Up, Alternate_Functions.None);
 
-
 	SPI_Pin(config);
 
+	config->Port->CR1 |= config->clock_phase | config->clock_polarity |
+					config->type | config->mode | config->frame_format |
+					config->data_format | config->crc | (config->prescaler<<3);
+	config->Port->CR2 |= config->dma | config->interrupt;
 
+	if(config->Port == SPI1)
+	{
+		config->speed = (SystemCoreClock/2)/(2*2^(config->prescaler));
+	}
+	else
+	{
+		config->speed = (SystemCoreClock/4)/(2*2^(config->prescaler));
+	}
+
+
+	config->Port -> CR1 |= SPI_CR1_SPE;
 
 }
 
