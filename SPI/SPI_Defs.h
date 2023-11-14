@@ -159,6 +159,20 @@ static const struct SPI3_CLK
 	uint16_t PB3;
 }SPI3_CLK ={310,23};
 
+static const struct SPI_Prescaler
+{
+	uint16_t CLK_div_2;
+	uint16_t CLK_div_4;
+	uint16_t CLK_div_8;
+	uint16_t CLK_div_16;
+	uint16_t CLK_div_32;
+	uint16_t CLK_div_64;
+	uint16_t CLK_div_128;
+	uint16_t CLK_div_256;
+}SPI_Prescaler ={0,1,2,3,4,5,6,7};
+
+
+
 
 
 
