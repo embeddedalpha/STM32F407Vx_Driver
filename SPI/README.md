@@ -30,9 +30,16 @@ SPI_Condfig xDevice;
 
 xDevice.Port = SPI1;
 xDevice.clock_pin = SPI1_CLK.PA5;
-xDevice.miso_pin = SPII_MISO.PA6;
+xDevice.miso_pin = SPI1_MISO.PA6;
 xDevice.mosi_pin = SPI1_MOSI.PA7;
-.........
+xDevice.NSS_Port = GPIOA;
+xDevice.NSS_Pin = 4;
+xDevice.clock_phase = SPI_Clock_Phase.High_1;
+xDevice.clock_phase = SPI_Clock_Polarity.High_1;
+xDevice.data_format = SPI_Data_Format.Bit8;
+xDevice.frame_format = SPI_Frame_Format.MSB_First;
+xDevice.type = SPI_Type.Master;
+xDevice.mode = SPI_Mode.unidirectional;
 
 ```
 
