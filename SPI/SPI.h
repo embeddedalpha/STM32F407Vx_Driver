@@ -27,12 +27,13 @@ typedef struct SPI_Config
 	uint16_t crc;
 	uint16_t data_format;
 	uint16_t frame_format;
-	uint16_t baudrate;
+	uint16_t prescaler;
 	uint16_t type;
 	uint16_t clock_polarity;
 	uint16_t clock_phase;
 	uint16_t interrupt;
 	uint16_t dma;
+	uint32_t speed;
 }SPI_Config;
 
 
