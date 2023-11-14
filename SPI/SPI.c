@@ -101,13 +101,18 @@ void SPI_Init(SPI_Config *config)
 		config->speed = (SystemCoreClock/4)/(2*2^(config->prescaler));
 	}
 
-
 	config->Port -> CR1 |= SPI_CR1_SPE;
 
 }
 
 
-void SPI_DeInit(SPI_Config *config);
+void SPI_DeInit(SPI_Config *config)
+{
+	if(config ->Port == SPI1)RCC -> APB2RSTR |= RCC_APB2RSTR_SPI1;
+	if(config ->Port == SPI2)RCC -> APB1RSTR |= RCC_APB1RSTR_SPI2;
+	if(config ->Port == SPI3)RCC -> APB1RSTR |= RCC_APB1RSTR_SPI3;
+}
+
 void SPI_TX_Byte(SPI_Config *config, uint16_t data);
 uint16_t SPI_RX_Byte(SPI_Config *config);
 void SPI_TX_Buffer(SPI_Config *config, uint8_t *tx_buffer, uint16_t length);
