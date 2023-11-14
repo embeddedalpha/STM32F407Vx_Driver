@@ -43,3 +43,11 @@ xDevice.mode = SPI_Mode.unidirectional;
 
 ```
 
+<h3> Pass the config structure to the Init Function: </h3>
+
+```C
+
+SPI_Init(&xDevice);
+
+```
+
