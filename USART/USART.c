@@ -330,6 +330,7 @@ int8_t USART_Init(USART_Config *config)
 
 
 
+
 	return 1;
 }
 
