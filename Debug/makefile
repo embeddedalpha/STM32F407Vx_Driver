@@ -12,6 +12,7 @@ RM := rm -rf
 -include USART/subdir.mk
 -include Startup/subdir.mk
 -include Src/subdir.mk
+-include SPI/subdir.mk
 -include GPIO/subdir.mk
 -include CAN/subdir.mk
 -include objects.mk

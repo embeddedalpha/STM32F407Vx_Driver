@@ -35,6 +35,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/CAN}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/GPIO}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/USART}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/SPI}&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input.780236489" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input"/>
 							</tool>
@@ -52,6 +53,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/CAN}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/GPIO}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/USART}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/SPI}&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.2035280060" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -136,6 +138,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/CAN}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/GPIO}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/USART}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/SPI}&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input.1124020390" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input"/>
 							</tool>
@@ -152,6 +155,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/CAN}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/GPIO}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/USART}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Driver/SPI}&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1934133186" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>

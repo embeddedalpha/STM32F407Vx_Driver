@@ -1,0 +1,10 @@
+../SPI/SPI.c:10:8:SPI_Clock_Enable	24	static
+../SPI/SPI.c:21:8:SPI_Clock_Disable	24	static
+../SPI/SPI.c:33:8:SPI_Config_Reset	24	static
+../SPI/SPI.c:58:13:SPI_Pin	40	static
+../SPI/SPI.c:182:6:SPI_Init	48	static
+../SPI/SPI.c:204:6:SPI_DeInit	16	static
+../SPI/SPI.c:212:10:SPI_TRX_Byte	24	static
+../SPI/SPI.c:225:6:SPI_TRX_Buffer	40	static
+../SPI/SPI.c:241:6:SPI_NSS_High	16	static
+../SPI/SPI.c:246:6:SPI_NSS_Low	16	static

@@ -24,6 +24,7 @@ C_DEPS :=
 SUBDIRS := \
 CAN \
 GPIO \
+SPI \
 Src \
 Startup \
 USART \
