@@ -14,9 +14,19 @@
 
 static const struct SPI_Mode
 {
-	uint16_t unidirectional;
-	uint16_t bidirectional;
-}SPI_Mode = {0 << 15, 1 << 15};
+	uint8_t Full_Duplex_Master;
+	uint8_t Full_Duplex_Slave;
+
+	uint8_t Half_Duplex_Master;
+	uint8_t Half_Duplex_Slave;
+
+	uint8_t RX_Only_Master;
+	uint8_t RX_Only_Slave;
+
+	uint8_t TX_Only_Master;
+	uint8_t TX_Only_Slave;
+
+}SPI_Mode = {0,0, 1,2, 2,1, 1,2};
 
 static const struct SPI_CRC
 {
@@ -170,8 +180,6 @@ static const struct SPI_Prescaler
 	uint16_t CLK_div_128;
 	uint16_t CLK_div_256;
 }SPI_Prescaler ={0,1,2,3,4,5,6,7};
-
-
 
 
 
