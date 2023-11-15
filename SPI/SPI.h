@@ -38,18 +38,19 @@ typedef struct SPI_Config
 
 
 
-
 int8_t SPI_Clock_Enable(SPI_Config *config);
 int8_t SPI_Clock_Disable(SPI_Config *config);
+
 int8_t SPI_Config_Reset(SPI_Config *config);
+
 void SPI_Init(SPI_Config *config);
 void SPI_DeInit(SPI_Config *config);
-void SPI_TX_Byte(SPI_Config *config, uint16_t data);
-uint16_t SPI_RX_Byte(SPI_Config *config);
-void SPI_TX_Buffer(SPI_Config *config, uint8_t *tx_buffer, uint16_t length);
-void SPI_RX_Buffer(SPI_Config *config, uint8_t *rx_buffer, uint16_t length);
 
+uint16_t SPI_TRX_Byte(SPI_Config *config,uint16_t tx_data);
+void SPI_TRX_Buffer(SPI_Config *config, uint16_t *tx_buffer,uint16_t *rx_buffer, uint16_t length);
 
+void SPI_NSS_High(SPI_Config *config);
+void SPI_NSS_Low(SPI_Config *config);
 
 
 #endif /* SPI_H_ */
