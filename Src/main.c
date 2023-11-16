@@ -4,6 +4,8 @@
 
 SPI_Config xDevice;
 
+uint16_t Read_Byte(void);
+
 
 int main(void)
 {
@@ -21,13 +23,27 @@ int main(void)
 	xDevice.prescaler = SPI_Prescaler.CLK_div_8;
 	SPI_Init(&xDevice);
 
-	uint16_t rx_byte;
+
+	uint16_t chip;
 
 	for(;;)
 	{
-		SPI_NSS_Low(&xDevice);
-		rx_byte = SPI_TRX_Byte(&xDevice, 0xAA);
-		SPI_NSS_High(&xDevice);
+		chip = Read_Byte();
 		Delay_ms(100);
 	}
+}
+
+
+
+uint16_t Read_Byte(void)
+{
+	uint16_t rx_byte;
+	SPI_NSS_Low(&xDevice);
+	SPI_TRX_Byte(&xDevice, 0x00);
+	SPI_TRX_Byte(&xDevice, 0x39);
+	rx_byte = SPI_TRX_Byte(&xDevice, 0x01);
+	rx_byte = SPI_TRX_Byte(&xDevice, 0xAA);
+	SPI_NSS_High(&xDevice);
+
+	return rx_byte;
 }
