@@ -2,6 +2,4 @@
 ../Inc/core_cm4.h:2030:26:SysTick_Config	2
 ../Inc/main.h:41:22:MCU_Clock_Setup	4
 ../Inc/main.h:82:26:Delay_Config	1
-../Inc/main.h:107:26:Delay_ms	2
-../Src/main.c:10:5:main	1
-../Src/main.c:38:10:Read_Byte	1
+../Src/main.c:12:5:main	1

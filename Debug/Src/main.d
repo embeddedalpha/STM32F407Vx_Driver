@@ -4,7 +4,10 @@ Src/main.o: ../Src/main.c ../Inc/main.h ../Inc/stm32f407xx.h \
  ../Inc/stm32f4xx.h D:/STM32F407_Firmware/Driver/SPI/SPI.h \
  D:/STM32F407_Firmware/Driver/GPIO/GPIO.h \
  D:/STM32F407_Firmware/Driver/GPIO/GPIO_Defs.h \
- D:/STM32F407_Firmware/Driver/SPI/SPI_Defs.h
+ D:/STM32F407_Firmware/Driver/SPI/SPI_Defs.h \
+ D:/STM32F407_Firmware/Driver/DMA/DMA.h \
+ D:/STM32F407_Firmware/Driver/DMA/DMA_Defs_Stream.h \
+ D:/STM32F407_Firmware/Driver/DMA/DMA_Defs_Config.h
 ../Inc/main.h:
 ../Inc/stm32f407xx.h:
 ../Inc/core_cm4.h:
@@ -18,3 +21,6 @@ D:/STM32F407_Firmware/Driver/SPI/SPI.h:
 D:/STM32F407_Firmware/Driver/GPIO/GPIO.h:
 D:/STM32F407_Firmware/Driver/GPIO/GPIO_Defs.h:
 D:/STM32F407_Firmware/Driver/SPI/SPI_Defs.h:
+D:/STM32F407_Firmware/Driver/DMA/DMA.h:
+D:/STM32F407_Firmware/Driver/DMA/DMA_Defs_Stream.h:
+D:/STM32F407_Firmware/Driver/DMA/DMA_Defs_Config.h:

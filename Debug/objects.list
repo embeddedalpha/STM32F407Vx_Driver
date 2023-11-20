@@ -1,4 +1,5 @@
 "./CAN/CAN.o"
+"./DMA/DMA.o"
 "./GPIO/GPIO.o"
 "./SPI/SPI.o"
 "./Src/main.o"

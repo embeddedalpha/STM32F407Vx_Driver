@@ -14,6 +14,7 @@ RM := rm -rf
 -include Src/subdir.mk
 -include SPI/subdir.mk
 -include GPIO/subdir.mk
+-include DMA/subdir.mk
 -include CAN/subdir.mk
 -include objects.mk
 
