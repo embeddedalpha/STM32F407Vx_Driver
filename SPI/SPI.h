@@ -11,6 +11,7 @@
 #include "main.h"
 #include "GPIO.h"
 #include "SPI_Defs.h"
+#include "DMA.h"
 
 
 typedef struct SPI_Config
@@ -47,8 +48,7 @@ void SPI_Init(SPI_Config *config);
 void SPI_DeInit(SPI_Config *config);
 
 uint16_t SPI_TRX_Byte(SPI_Config *config,uint16_t tx_data);
-void SPI_TRX_Buffer(SPI_Config *config, uint16_t *tx_buffer,uint16_t *rx_buffer, uint16_t length);
-
+void SPI_TRX_Buffer(SPI_Config *config, uint16_t *tx_buffer,uint16_t *rx_buffer, uint16_t tx_length, uint16_t rx_length);
 void SPI_NSS_High(SPI_Config *config);
 void SPI_NSS_Low(SPI_Config *config);
 
