@@ -7,6 +7,9 @@
 
 #include "SPI.h"
 
+DMA_Config xDMA_TX;
+DMA_Config xDMA_RX;
+
 int8_t SPI_Clock_Enable(SPI_Config *config)
 {
 	int8_t retval = 0;
@@ -196,9 +199,105 @@ void SPI_Init(SPI_Config *config)
 	else config->speed = (SystemCoreClock/4)/(2*2^(config->prescaler));
 
 	config->Port -> CR1 |= SPI_CR1_SSM | SPI_CR1_SSI;
-	config->Port -> CR1 |= SPI_CR1_SPE;
 
+
+	if(config->dma |= SPI_DMA.RX_DMA_Enable)
+	{
+		if(config->Port == SPI1)
+		{
+			xDMA_RX.stream = SPI_DMA_Stream.SPI1_RX;
+			xDMA_RX.controller = DMA2;
+			xDMA_RX.channel = SPI_DMA_Stream.SPI1_DMA_Channel;
+			xDMA_RX.circular_mode = DMA_Circular_Mode.Disable;
+			xDMA_RX.flow_control = DMA_Flow_Control.Peripheral_Control;
+			xDMA_RX.priority_level = DMA_Priority_Level.Very_high;
+			xDMA_RX.memory_data_size = DMA_Memory_Data_Size.byte;
+			xDMA_RX.peripheral_data_size = DMA_Peripheral_Data_Size.byte;
+			xDMA_RX.transfer_direction = DMA_Transfer_Direction.Peripheral_to_memory;
+			xDMA_RX.interrupts =  DMA_Interrupts.Disable;
+			DMA_Init(&xDMA_RX);
+		}
+		else if(config->Port == SPI2)
+		{
+			xDMA_RX.stream = SPI_DMA_Stream.SPI2_RX;
+			xDMA_RX.controller = DMA1;
+			xDMA_RX.channel = SPI_DMA_Stream.SPI2_DMA_Channel;
+			xDMA_RX.circular_mode = DMA_Circular_Mode.Disable;
+			xDMA_RX.flow_control = DMA_Flow_Control.Peripheral_Control;
+			xDMA_RX.priority_level = DMA_Priority_Level.Very_high;
+			xDMA_RX.memory_data_size = DMA_Memory_Data_Size.byte;
+			xDMA_RX.peripheral_data_size = DMA_Peripheral_Data_Size.byte;
+			xDMA_RX.transfer_direction = DMA_Transfer_Direction.Peripheral_to_memory;
+			xDMA_RX.interrupts =  DMA_Interrupts.Disable;
+			DMA_Init(&xDMA_RX);
+		}
+		else if(config->Port == SPI3)
+		{
+			xDMA_RX.stream = SPI_DMA_Stream.SPI3_RX;
+			xDMA_RX.controller = DMA1;
+			xDMA_RX.channel = SPI_DMA_Stream.SPI3_DMA_Channel;
+			xDMA_RX.circular_mode = DMA_Circular_Mode.Disable;
+			xDMA_RX.flow_control = DMA_Flow_Control.Peripheral_Control;
+			xDMA_RX.priority_level = DMA_Priority_Level.Very_high;
+			xDMA_RX.memory_data_size = DMA_Memory_Data_Size.byte;
+			xDMA_RX.peripheral_data_size = DMA_Peripheral_Data_Size.byte;
+			xDMA_RX.transfer_direction = DMA_Transfer_Direction.Peripheral_to_memory;
+			xDMA_RX.interrupts =  DMA_Interrupts.Disable;
+			DMA_Init(&xDMA_RX);
+		}
+	}
+	if(config->dma |= SPI_DMA.TX_DMA_Enable)
+	{
+		if(config->Port == SPI1)
+		{
+			xDMA_TX.stream = SPI_DMA_Stream.SPI1_TX;
+			xDMA_TX.controller = DMA2;
+			xDMA_TX.channel = SPI_DMA_Stream.SPI1_DMA_Channel;
+			xDMA_TX.circular_mode = DMA_Circular_Mode.Disable;
+			xDMA_TX.flow_control = DMA_Flow_Control.Peripheral_Control;
+			xDMA_TX.priority_level = DMA_Priority_Level.Very_high;
+			xDMA_TX.memory_data_size = DMA_Memory_Data_Size.byte;
+			xDMA_TX.peripheral_data_size = DMA_Peripheral_Data_Size.byte;
+			xDMA_TX.transfer_direction = DMA_Transfer_Direction.Peripheral_to_memory;
+			xDMA_TX.interrupts =  DMA_Interrupts.Disable;
+			DMA_Init(&xDMA_TX);
+		}
+		else if(config->Port == SPI2)
+		{
+			xDMA_TX.stream = SPI_DMA_Stream.SPI2_TX;
+			xDMA_TX.controller = DMA1;
+			xDMA_TX.channel = SPI_DMA_Stream.SPI2_DMA_Channel;
+			xDMA_TX.circular_mode = DMA_Circular_Mode.Disable;
+			xDMA_TX.flow_control = DMA_Flow_Control.Peripheral_Control;
+			xDMA_TX.priority_level = DMA_Priority_Level.Very_high;
+			xDMA_TX.memory_data_size = DMA_Memory_Data_Size.byte;
+			xDMA_TX.peripheral_data_size = DMA_Peripheral_Data_Size.byte;
+			xDMA_TX.transfer_direction = DMA_Transfer_Direction.Peripheral_to_memory;
+			xDMA_TX.interrupts =  DMA_Interrupts.Disable;
+			DMA_Init(&xDMA_TX);
+		}
+		else if(config->Port == SPI3)
+		{
+			xDMA_TX.stream = SPI_DMA_Stream.SPI3_TX;
+			xDMA_TX.controller = DMA1;
+			xDMA_TX.channel = SPI_DMA_Stream.SPI3_DMA_Channel;
+			xDMA_TX.circular_mode = DMA_Circular_Mode.Disable;
+			xDMA_TX.flow_control = DMA_Flow_Control.Peripheral_Control;
+			xDMA_TX.priority_level = DMA_Priority_Level.Very_high;
+			xDMA_TX.memory_data_size = DMA_Memory_Data_Size.byte;
+			xDMA_TX.peripheral_data_size = DMA_Peripheral_Data_Size.byte;
+			xDMA_TX.transfer_direction = DMA_Transfer_Direction.Peripheral_to_memory;
+			xDMA_TX.interrupts =  DMA_Interrupts.Disable;
+			DMA_Init(&xDMA_TX);
+		}
+	}
 }
+
+void SPI_Enable(SPI_Config *config)
+{
+	config->Port -> CR1 |= SPI_CR1_SPE;
+}
+
 
 
 void SPI_DeInit(SPI_Config *config)
@@ -222,15 +321,31 @@ uint16_t SPI_TRX_Byte(SPI_Config *config,uint16_t tx_data)
 }
 
 
-void SPI_TRX_Buffer(SPI_Config *config, uint16_t *tx_buffer,uint16_t *rx_buffer, uint16_t length)
+void SPI_TRX_Buffer(SPI_Config *config, uint16_t *tx_buffer,uint16_t *rx_buffer, uint16_t tx_length, uint16_t rx_length)
 {
 	if(config->dma || SPI_DMA.TX_DMA_Enable)
 	{
-		//
+		xDMA_TX.memory_address = (uint32_t)&tx_buffer[0];
+		xDMA_TX.peripheral_address = (uint32_t)&(config->Port->DR);
+		xDMA_TX.buffer_length = tx_length;
+		DMA_Set_Target(&xDMA_TX);
+		DMA_Trigger(&xDMA_TX);
 	}
+
+	if(config->dma || SPI_DMA.RX_DMA_Enable)
+	{
+		xDMA_TX.memory_address = (uint32_t)&rx_buffer[0];
+		xDMA_TX.peripheral_address = (uint32_t)&(config->Port->DR);
+		xDMA_TX.buffer_length = rx_length;
+		DMA_Set_Target(&xDMA_RX);
+		DMA_Trigger(&xDMA_RX);
+	}
+
+	SPI_Enable(config);
+
 	if(config->dma && SPI_DMA.TX_DMA_Disable)
 	{
-		for(int i = 0; i < length; i++)
+		for(int i = 0; i < tx_length; i++)
 		{
 			rx_buffer[i] = SPI_TRX_Byte(config,tx_buffer[i]);
 		}
