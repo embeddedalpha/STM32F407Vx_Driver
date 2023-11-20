@@ -81,29 +81,7 @@ static const struct SPI_DMA
 }SPI_DMA={1<<1,0,1<<0,0};
 
 
-static const struct SPI_DMA_Stream
-{
-	DMA_Stream_TypeDef *SPI3_RX_1;
-	DMA_Stream_TypeDef *SPI3_RX_2;
-	int SPI3_Channel;
-	DMA_Stream_TypeDef *SPI3_TX_1;
-	DMA_Stream_TypeDef *SPI3_TX_2;
 
-	DMA_Stream_TypeDef *SPI2_RX;
-	int SPI2_Channel;
-	DMA_Stream_TypeDef *SPI2_TX;
-
-	DMA_Stream_TypeDef *SPI1_RX_1;
-	DMA_Stream_TypeDef *SPI1_RX_2;
-	int SPI1_Channel;
-	DMA_Stream_TypeDef *SPI1_TX_1;
-	DMA_Stream_TypeDef *SPI1_TX_2;
-
-}SPI_DMA_Stream = {
-		DMA1_Stream0, DMA1_Stream2, 0, DMA1_Stream5, DMA1_Stream7,
-		DMA1_Stream3, 0, DMA1_Stream4,
-		DMA2_Stream0, DMA2_Stream2, 3, DMA2_Stream3, DMA2_Stream5,
-};
 
 
 static const struct SPI1_CLK
