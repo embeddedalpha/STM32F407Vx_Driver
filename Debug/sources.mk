@@ -25,8 +25,10 @@ SUBDIRS := \
 CAN \
 DMA \
 GPIO \
+I2C \
 SPI \
 Src \
 Startup \
+Timer \
 USART \
 

@@ -10,9 +10,11 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include USART/subdir.mk
+-include Timer/subdir.mk
 -include Startup/subdir.mk
 -include Src/subdir.mk
 -include SPI/subdir.mk
+-include I2C/subdir.mk
 -include GPIO/subdir.mk
 -include DMA/subdir.mk
 -include CAN/subdir.mk

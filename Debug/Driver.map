@@ -402,6 +402,196 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x29 ./GPIO/GPIO.o
  .debug_macro   0x0000000000000000       0x4c ./GPIO/GPIO.o
  .debug_macro   0x0000000000000000       0x22 ./GPIO/GPIO.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .group         0x0000000000000000        0xc ./I2C/I2C.o
+ .text          0x0000000000000000        0x0 ./I2C/I2C.o
+ .data          0x0000000000000000        0x0 ./I2C/I2C.o
+ .bss           0x0000000000000000        0x0 ./I2C/I2C.o
+ .rodata.MODE   0x0000000000000000        0x4 ./I2C/I2C.o
+ .rodata.Output_Type
+                0x0000000000000000        0x2 ./I2C/I2C.o
+ .rodata.Speed  0x0000000000000000        0x4 ./I2C/I2C.o
+ .rodata.Pull   0x0000000000000000        0x3 ./I2C/I2C.o
+ .rodata.Alternate_Functions
+                0x0000000000000000       0x2d ./I2C/I2C.o
+ .rodata.Interrupt_Edge
+                0x0000000000000000        0x3 ./I2C/I2C.o
+ .rodata.SPI_DMA_Stream
+                0x0000000000000000       0x24 ./I2C/I2C.o
+ .rodata.I2C_DMA_Stream
+                0x0000000000000000       0x24 ./I2C/I2C.o
+ .rodata.USART_DMA_Stream
+                0x0000000000000000       0x48 ./I2C/I2C.o
+ .rodata.DMA_Flow_Control
+                0x0000000000000000        0x8 ./I2C/I2C.o
+ .rodata.DMA_Transfer_Direction
+                0x0000000000000000        0xc ./I2C/I2C.o
+ .rodata.DMA_Priority_Level
+                0x0000000000000000       0x10 ./I2C/I2C.o
+ .rodata.DMA_Peripheral_Data_Size
+                0x0000000000000000        0xc ./I2C/I2C.o
+ .rodata.DMA_Memory_Data_Size
+                0x0000000000000000        0xc ./I2C/I2C.o
+ .rodata.DMA_Circular_Mode
+                0x0000000000000000        0x8 ./I2C/I2C.o
+ .rodata.DMA_Interrupts
+                0x0000000000000000       0x14 ./I2C/I2C.o
+ .rodata.I2C1_SDA_Pin
+                0x0000000000000000        0x2 ./I2C/I2C.o
+ .rodata.I2C1_SCL_Pin
+                0x0000000000000000        0x2 ./I2C/I2C.o
+ .rodata.I2C2_SDA_Pin
+                0x0000000000000000        0x1 ./I2C/I2C.o
+ .rodata.I2C2_SCL_Pin
+                0x0000000000000000        0x1 ./I2C/I2C.o
+ .rodata.I2C3_SDA_Pin
+                0x0000000000000000        0x1 ./I2C/I2C.o
+ .rodata.I2C3_SCL_Pin
+                0x0000000000000000        0x1 ./I2C/I2C.o
+ .rodata.I2C_Mode
+                0x0000000000000000        0x2 ./I2C/I2C.o
+ .rodata.I2C_Interrupts
+                0x0000000000000000        0x8 ./I2C/I2C.o
+ .rodata.I2C_DMA
+                0x0000000000000000        0x4 ./I2C/I2C.o
+ .bss.temp      0x0000000000000000        0x4 ./I2C/I2C.o
+ .bss.xI2C_TX   0x0000000000000000       0x34 ./I2C/I2C.o
+ .bss.xI2C_RX   0x0000000000000000       0x34 ./I2C/I2C.o
+ .text.pin_setup
+                0x0000000000000000      0x180 ./I2C/I2C.o
+ .text.I2C_Clock_Enable
+                0x0000000000000000       0x6c ./I2C/I2C.o
+ .text.I2C_Clock_Disable
+                0x0000000000000000       0x6c ./I2C/I2C.o
+ .text.I2C_Reset
+                0x0000000000000000       0x80 ./I2C/I2C.o
+ .text.I2C_Init
+                0x0000000000000000      0x24c ./I2C/I2C.o
+ .text.I2C_Master_Start
+                0x0000000000000000       0x36 ./I2C/I2C.o
+ .text.I2C_Master_Address
+                0x0000000000000000       0x74 ./I2C/I2C.o
+ .text.I2C_Master_Send_Byte
+                0x0000000000000000       0x42 ./I2C/I2C.o
+ .text.I2C_Master_Send_Buffer
+                0x0000000000000000       0x8c ./I2C/I2C.o
+ .text.I2C_Master_NACK
+                0x0000000000000000       0x24 ./I2C/I2C.o
+ .text.I2C_Master_ACK
+                0x0000000000000000       0x24 ./I2C/I2C.o
+ .text.I2C_Master_Stop
+                0x0000000000000000       0x24 ./I2C/I2C.o
+ .text.I2C_Master_Write_Register
+                0x0000000000000000       0x4e ./I2C/I2C.o
+ .text.I2C_Master_Read_Register
+                0x0000000000000000       0x5e ./I2C/I2C.o
+ .text.I2C_Master_Receive_Byte
+                0x0000000000000000       0x4e ./I2C/I2C.o
+ .text.I2C_Master_Write_Register_Block
+                0x0000000000000000       0x46 ./I2C/I2C.o
+ .debug_info    0x0000000000000000     0x13ba ./I2C/I2C.o
+ .debug_abbrev  0x0000000000000000      0x20a ./I2C/I2C.o
+ .debug_aranges
+                0x0000000000000000       0x98 ./I2C/I2C.o
+ .debug_rnglists
+                0x0000000000000000       0x71 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000      0x29b ./I2C/I2C.o
+ .debug_macro   0x0000000000000000      0xaae ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x2f ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x22 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x8e ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x51 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000      0x103 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x6a ./I2C/I2C.o
+ .debug_macro   0x0000000000000000      0x1df ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x1c ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x22 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0xd9 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000     0x102d ./I2C/I2C.o
+ .debug_macro   0x0000000000000000      0x11f ./I2C/I2C.o
+ .debug_macro   0x0000000000000000    0x15e89 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x97 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x61 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x2a ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x43 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x34 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x16 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x97 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000      0x369 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0xfd ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x10 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x16 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x43 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x34 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x10 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x58 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x8e ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x1c ./I2C/I2C.o
+ .debug_macro   0x0000000000000000      0x177 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x16 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x16 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000      0x147 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000      0x19b ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x10 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x35 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000      0x460 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x16 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x20 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x16 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x16 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x29 ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x4c ./I2C/I2C.o
+ .debug_macro   0x0000000000000000       0x22 ./I2C/I2C.o
+ .debug_line    0x0000000000000000      0xe04 ./I2C/I2C.o
+ .debug_str     0x0000000000000000    0x8e0f1 ./I2C/I2C.o
+ .comment       0x0000000000000000       0x44 ./I2C/I2C.o
+ .debug_frame   0x0000000000000000      0x280 ./I2C/I2C.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./I2C/I2C.o
  .group         0x0000000000000000        0xc ./SPI/SPI.o
  .group         0x0000000000000000        0xc ./SPI/SPI.o
  .group         0x0000000000000000        0xc ./SPI/SPI.o
@@ -976,6 +1166,155 @@ Discarded input sections
  .text          0x0000000000000000       0x14 ./Startup/startup_stm32f407vetx.o
  .data          0x0000000000000000        0x0 ./Startup/startup_stm32f407vetx.o
  .bss           0x0000000000000000        0x0 ./Startup/startup_stm32f407vetx.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .group         0x0000000000000000        0xc ./Timer/Timer.o
+ .text          0x0000000000000000        0x0 ./Timer/Timer.o
+ .data          0x0000000000000000        0x0 ./Timer/Timer.o
+ .bss           0x0000000000000000        0x0 ./Timer/Timer.o
+ .rodata.MODE   0x0000000000000000        0x4 ./Timer/Timer.o
+ .rodata.Output_Type
+                0x0000000000000000        0x2 ./Timer/Timer.o
+ .rodata.Speed  0x0000000000000000        0x4 ./Timer/Timer.o
+ .rodata.Pull   0x0000000000000000        0x3 ./Timer/Timer.o
+ .rodata.Alternate_Functions
+                0x0000000000000000       0x2d ./Timer/Timer.o
+ .rodata.Interrupt_Edge
+                0x0000000000000000        0x3 ./Timer/Timer.o
+ .rodata.SPI_DMA_Stream
+                0x0000000000000000       0x24 ./Timer/Timer.o
+ .rodata.I2C_DMA_Stream
+                0x0000000000000000       0x24 ./Timer/Timer.o
+ .rodata.USART_DMA_Stream
+                0x0000000000000000       0x48 ./Timer/Timer.o
+ .rodata.DMA_Flow_Control
+                0x0000000000000000        0x8 ./Timer/Timer.o
+ .rodata.DMA_Transfer_Direction
+                0x0000000000000000        0xc ./Timer/Timer.o
+ .rodata.DMA_Priority_Level
+                0x0000000000000000       0x10 ./Timer/Timer.o
+ .rodata.DMA_Peripheral_Data_Size
+                0x0000000000000000        0xc ./Timer/Timer.o
+ .rodata.DMA_Memory_Data_Size
+                0x0000000000000000        0xc ./Timer/Timer.o
+ .rodata.DMA_Circular_Mode
+                0x0000000000000000        0x8 ./Timer/Timer.o
+ .rodata.DMA_Interrupts
+                0x0000000000000000       0x14 ./Timer/Timer.o
+ .rodata.Timer_Channel
+                0x0000000000000000        0x4 ./Timer/Timer.o
+ .rodata.Timer_Counter_Direction
+                0x0000000000000000        0x3 ./Timer/Timer.o
+ .rodata.Timer_Channel_1_Feature
+                0x0000000000000000        0xc ./Timer/Timer.o
+ .rodata.Timer_DMA
+                0x0000000000000000        0x2 ./Timer/Timer.o
+ .bss.Peripheral_Clock
+                0x0000000000000000        0x4 ./Timer/Timer.o
+ .text.Timer_Init
+                0x0000000000000000      0x118 ./Timer/Timer.o
+ .debug_info    0x0000000000000000      0xd40 ./Timer/Timer.o
+ .debug_abbrev  0x0000000000000000      0x131 ./Timer/Timer.o
+ .debug_aranges
+                0x0000000000000000       0x20 ./Timer/Timer.o
+ .debug_rnglists
+                0x0000000000000000       0x14 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000      0x29b ./Timer/Timer.o
+ .debug_macro   0x0000000000000000      0xaae ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x2f ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x22 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x8e ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x51 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000      0x103 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x6a ./Timer/Timer.o
+ .debug_macro   0x0000000000000000      0x1df ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x1c ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x22 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0xd9 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000     0x102d ./Timer/Timer.o
+ .debug_macro   0x0000000000000000      0x11f ./Timer/Timer.o
+ .debug_macro   0x0000000000000000    0x15e89 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x97 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x61 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x2a ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x43 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x34 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x16 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x97 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000      0x369 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0xfd ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x10 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x16 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x43 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x34 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x10 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x58 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x8e ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x1c ./Timer/Timer.o
+ .debug_macro   0x0000000000000000      0x177 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x16 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x16 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000      0x147 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000      0x19b ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x10 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x35 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000      0x460 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x16 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x20 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x16 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x16 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x29 ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x4c ./Timer/Timer.o
+ .debug_macro   0x0000000000000000       0x22 ./Timer/Timer.o
+ .debug_line    0x0000000000000000      0x7ad ./Timer/Timer.o
+ .debug_str     0x0000000000000000    0x8dec2 ./Timer/Timer.o
+ .comment       0x0000000000000000       0x44 ./Timer/Timer.o
+ .debug_frame   0x0000000000000000       0x38 ./Timer/Timer.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./Timer/Timer.o
  .group         0x0000000000000000        0xc ./USART/USART.o
  .group         0x0000000000000000        0xc ./USART/USART.o
  .group         0x0000000000000000        0xc ./USART/USART.o
@@ -1416,12 +1755,14 @@ LOAD D:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 LOAD ./CAN/CAN.o
 LOAD ./DMA/DMA.o
 LOAD ./GPIO/GPIO.o
+LOAD ./I2C/I2C.o
 LOAD ./SPI/SPI.o
 LOAD ./Src/main.o
 LOAD ./Src/syscalls.o
 LOAD ./Src/sysmem.o
 LOAD ./Src/system_stm32f4xx.o
 LOAD ./Startup/startup_stm32f407vetx.o
+LOAD ./Timer/Timer.o
 LOAD ./USART/USART.o
 START GROUP
 LOAD D:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
